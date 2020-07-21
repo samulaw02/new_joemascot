@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Piedra&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Piedra&family=Roboto:wght@700&display=swap');
+
+.loader {
+	border-top: 16px solid blue;
+	border-right: 16px solid green;
+	border-bottom: 16px solid red;
+	border-left: 16px solid pink;
+}
+
+.nav-link {
+	font-family: 'Tangerine', serif;
+	font-size: 35px;
+}
+
+.rotate {
+	animation: rotation 20s infinite linear;
+}
+
+.flex-container {
+	padding-left: 10%;
+	display: flex;
+	flex-flow: row wrap;
+	align-items: center;
+	justify-content: center;
+}
+
+.container {
+	position: relative;
+}
+
+.slogan {
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	font-size: 12px;
+	color: red;
+	position: absolute;
+	bottom: 0px;
+	left: 310px;
+}
+
+.phone {
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	font-size: 12px;
+	padding-inline-start: 10px;
+	display: inline-flexbox;
+	color: red;
+	flex-shrink: initial;
+}
+
+@keyframes rotation {
+	from {
+		transform: rotate(0deg);
+	}
+	to {
+		transform: rotate(359deg);
+	}
+}
+
+/* Style the navigation menu */
+.top {
+	margin-top: -2%;
+	width: 100%;
+	background-color: #555;
+	overflow: auto;
+	text-align: center;
+}
+
+/* Navigation links */
+.top a {
+	float: left;
+	padding: 12px;
+	color: white;
+	text-decoration: none;
+	font-size: 17px;
+	width: 25%; /* Four equal-width links. If you have two links, use 50%, and 33.33% for three links, etc.. */
+	text-align: center; /* If you want the text to be centered */
+}
+
+/* Add a background color on mouse-over */
+.top a:hover {
+	background-color: #000;
+}
+
+/* Style the current/active link */
+.top a.active {
+	background-color: #4caf50;
+}
+
+/* Add responsiveness - on screens less than 500px, make the navigation links appear on top of each other, instead of next to each other */
+@media screen and (max-width: 500px) {
+	.navbar a {
+		float: none;
+		display: block;
+		width: 100%;
+		text-align: left; /* If you want the text to be left-aligned on small screens */
+	}
+}
+
+#call {
+	font-family: 'Roboto Mono', monospace, serif;
+	font-size: 18px;
+}
+
+.product {
+	font-family: 'Piedra', cursive;
+	font-size: 30px;
+}
+
+.product p {
+	font-size: 30x;
+}
+
+#colorlib-footer h4 {
+	font-family: 'Piedra', cursive;
+	font-family: 'Roboto', sans-serif;
+	font-size: 18px;
+}
+
+#colorlib-footer p {
+	font-family: 'Piedra', cursive;
+	font-family: 'Roboto', sans-serif;
+	font-size: 14px;
+}
+
+.colorlib-footer-links a {
+	font-family: 'Piedra', cursive;
+	font-family: 'Roboto', sans-serif;
+	font-size: 14px;
+}
+
+.address {
+	font-family: 'Piedra', cursive;
+	font-family: 'Roboto', sans-serif;
+	font-size: 14px;
+}
