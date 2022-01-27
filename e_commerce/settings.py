@@ -20,7 +20,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # See https://docs.djangoproject.com/en/3.0/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-# SECRET_KEY = '+v(1d7a)%)j!e8akti&15(+0+3sywau!9(69k0gt_@4j_6-_&&'
+SECRET_KEY = '+v(1d7a)%)j!e8akti&15(+0+3sywau!9(69k0gt_@4j_6-_&&'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
@@ -69,6 +69,7 @@ TEMPLATES = [
 ]
 
 WSGI_APPLICATION = 'e_commerce.wsgi.application'
+
 
 
 # Database
@@ -124,7 +125,7 @@ STATICFILES_DIRS = [
     os.path.join(BASE_DIR, 'static')
 ]
 
-STATIC_ROOT = os.path.join(BASE_DIR, 'assets')
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 
 MEDIA_URL = '/media/'
 
